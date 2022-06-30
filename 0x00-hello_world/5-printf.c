@@ -1,7 +1,15 @@
 #include <stdio.h>
 
-int main (void)
+/**
+ * main - Entry point
+ *
+ * Description to Write a C program that prints exactly
+ * with proper grammar, but the outcome is a piece of art
+ */
+
+int main(void)
+
 {
-  print("with proper grammar, but the outcome is a pice of art,\n);
-  return (0);
+printf("with proper grammar, but the outcome is a pice of art,\n);
+return (0);
 }
