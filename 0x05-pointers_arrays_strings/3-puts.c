@@ -2,7 +2,7 @@
 
 /**
  * _puts -> function that puts
- * 2str: to put function
+ * @str: to puts function
  */
 void _puts(char *str)
 {
