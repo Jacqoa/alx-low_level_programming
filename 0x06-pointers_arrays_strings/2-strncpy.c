@@ -6,6 +6,7 @@
  * @dest: first param
  * @src: Second param
  * @n: Third param
+ * Return: pointer
  */
 char *_strncpy(char *dest, char *src, int n)
 {
