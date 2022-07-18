@@ -4,7 +4,7 @@ include "main.h"
  * _strpbrk - function to search a string
  * @s: string to search
  * @accept: accepted input
- *
+ * Description: returns
  * Return: Always
 **/
 
