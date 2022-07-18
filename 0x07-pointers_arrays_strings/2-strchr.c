@@ -3,7 +3,7 @@
 /**
  * _strchr - this is a string character
  * @s: given string
- * @c: charcetr
+ * @c: characetr
  *
  * Return: a string
  */
@@ -22,4 +22,5 @@ char *_strchr(char *s, char c)
 		{
 			return (NULL);
 		}
+	}
 }
