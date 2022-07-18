@@ -3,7 +3,7 @@
 /**
  * _strspn - Entry point
  * @s: input string
- * @c: input string
+ * @accept: accepted string
  *
  * Return: Always 0
  */
