@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * memset() - Function that fills a memory area.
+ * _memset() - Function that fills a memory area.
  * @s: string
  * @b: a character
  * @n: An integer
