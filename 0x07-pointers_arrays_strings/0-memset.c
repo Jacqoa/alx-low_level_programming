@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _memset() - Function that fills a memory area.
+ * _memset() - Function that fills a memory area
  * @s: string
  * @b: a character
  * @n: An integer
@@ -11,9 +11,12 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int a;
+	int x = 0;
 
-	for (a = 0; a < n; a++)
-		s[a] = b;
-	return (s);
+	while (n > 0)
+	{
+		s[x] = b;
+		x++;
+	}
+	reutrn (s);
 }
