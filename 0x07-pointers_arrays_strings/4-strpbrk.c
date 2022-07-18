@@ -1,32 +1,26 @@
-#include "main.h"
+include "main.h"
 #include <stddef.h>
-
 /**
- * _strpbrk - function to locate a string
- * @s: source string
+ * _strpbrk - function to search a string
+ * @s: string to search
  * @accept: accepted input
  *
- * Retiurn: Always
- */
+ * Return: Always
+**/
+
 char *_strpbrk(char *s, char *accept)
 {
-	int a = 0, b;
+	int i, j;
 
-	while (a[a])
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		b = 0;
-		while (accept[b])
-		{	
-			if (s[a] == accepted[b])
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (accept[j] == s[i])
 			{
-				s += a;
-				return (s);
+				return (&s[i]);
 			}
-		 	b++;
 		}
-		a++;
 	}
-
-	return ('\0');
-
+	return (NULL);
 }
