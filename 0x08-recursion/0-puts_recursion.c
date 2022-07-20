@@ -1,18 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _puts_recursion -> Repeating items
- * @s: input string
- *
- * Return: Always
- */
+* _puts_recursion -> function to print string recursivly
+* @s: string
+*
+* Return: a string
+*/
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-	char name[30] = "Hello world";
+		_putchar('\n');
+		return;
 	}
-	printf("%s", name);
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
 }
-
-
