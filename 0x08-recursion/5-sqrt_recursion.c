@@ -1,33 +1,38 @@
-#include "main.h"
-
-int_sqrt(int, int);
-
+include"main.h"
 /**
- * _sqrt_recursion - square root function
- * @n: integer to be sqaure
- *
- * Return: integer
- */
-int _sqrt_recursion(int n)
+*helperFunction - checks if sqrt of number exists
+*@num: number.
+*@pSqrt: poissible sqrt of number.
+*
+*Return: sqrt of number ot -1 for error.
+*/
+inthelperFunction(int num, int pSqrt)
 {
-	return (_sqrt(n, 1));
+if ((pSqrt * pSqrt) == num)
+{
+return (pSqrt);
+}
+else
+{
+if ((pSqrt * pSqrt) > num)
+return (-1);
+else
+return (helperFunction(num, pSqrt + 1));
 
+}
 }
 
 /**
- * _sqrt - recursive square root
- * @n: number
- * @i: iterator
- *
- * Return: an intger
- */
-int _sqrt(int n, int i)
+*_sqrt_recursion - returns the natural square root of a number.
+*@n: number to find sqrt of.
+*
+*Return: squareroot of n.
+*-1 if n does not have a natural sqrt.
+*/
+int_sqrt_recursion(int n)
 {
-	int square = i * i;
-
-	if (square > n)
-		return (-1);
-	if (square == n)
-		return (i);
-	return (_sqrt(n, i + 1));
+if (n < 0)
+return (-1);
+else
+return (helperFunction(n, 0));
 }
