@@ -4,7 +4,7 @@ int bandersnatch(char *s1, char *s2);
 char *move(char *s2);
 
 /**
- * wildcmp - functio to compares two string recursively
+ * wildcmp - function to compares two string recursively
  * checking for wildcards expansion
  * @s1: first input
  * @s2: second input
