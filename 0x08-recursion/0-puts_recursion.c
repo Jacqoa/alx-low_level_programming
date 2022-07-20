@@ -8,8 +8,10 @@
  */
 void _puts_recursion(char *s)
 {
+	if (*s == '\0')
+	{
 	char name[30] = "Hello world";
-
+	}
 	printf("%s", name);
 }
 
