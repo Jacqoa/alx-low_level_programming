@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - function to ,print spring in reverse order
+ * _print_rev_recursion - function to ,print spring in reverse order
  * @s: input string
  *
  * Return: Reversed string
