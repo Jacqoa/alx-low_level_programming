@@ -9,9 +9,8 @@
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
-		rerturn;
-	s++;
+	{
 	_print_rev_recursion(s);
-	s--;
-	_putchar(*s);
+	putchar(*s);
+	}
 }
