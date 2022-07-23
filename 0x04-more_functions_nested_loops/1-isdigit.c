@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
-* _isupper -> this is a function to check upper case alphas
-* @c: an integer paramer
-* Return: something but success
+* _isdigit - function that check if it's a digit
+* @c: takes in a character/digit
+* Return: 1 if digit and 0 if anything else
 */
-int _isupper(int c)
+int _isdigit(int c)
 {
-	return (c >= 'A' && c <= 'Z');
+	if (c >= '0' && c <= '9')
+	return (1);
+	else
+	return (0);
 }
